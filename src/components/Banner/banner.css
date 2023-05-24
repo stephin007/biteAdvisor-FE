@@ -11,6 +11,10 @@ section{
     align-items: center;
 }
 
+.section::before{
+     
+}
+
 .banner{
     position: relative;
     z-index: 1;
