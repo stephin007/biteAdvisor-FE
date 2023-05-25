@@ -7,7 +7,7 @@ const Banner = () => {
         <h2>Taste. Rate. Savor. Share.</h2>
         <p>
           Indulge Your Taste Buds and Discover Culinary Delights! Welcome to
-          SavorySights - Your Ultimate Destination for Restaurant Reviews!
+          BiteAdvisor 🍕 - Your Ultimate Destination for Restaurant Reviews!
         </p>
       </div>
     </>
