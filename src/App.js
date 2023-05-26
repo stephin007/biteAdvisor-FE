@@ -1,5 +1,5 @@
 import "./App.css";
-import { Header, Banner } from "./components";
+import { Header, Banner, Search } from "./components";
 
 const App = () => {
   return (
@@ -9,6 +9,9 @@ const App = () => {
       </div>
       <div className='main-container'>
         <Banner />
+        <div className='content-container'>
+          <Search />
+        </div>
       </div>
     </div>
   );
