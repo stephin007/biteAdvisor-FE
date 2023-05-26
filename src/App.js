@@ -3,7 +3,7 @@ import db from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
 
 import "./App.css";
-import { Header, Banner, Search } from "./components";
+import { Header, Banner, Search, Card } from "./components";
 
 const App = () => {
   const [reviews, setReviews] = useState([]);
@@ -20,7 +20,7 @@ const App = () => {
       setLoading(false);
     };
 
-    getDetails();
+    // getDetails();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
@@ -32,6 +32,7 @@ const App = () => {
         <Banner />
         <div className='content-container'>
           <Search />
+          <Card reviews={reviews} loading={loading} />
         </div>
       </div>
     </div>
