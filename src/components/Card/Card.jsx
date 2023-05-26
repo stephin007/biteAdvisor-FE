@@ -5,11 +5,17 @@ const Card = () => {
     <div className='card-container'>
       <div className='card-main'>
         <div className='card-header'>
-          <div className='card-header-name'>
-            <p>Hashery</p>
+          <div className='card-header-rest-deets'>
+            <div className='card-header-name'>
+              <p>Hashery</p>
+            </div>
+            <div className='card-header-location'>
+              <p>📍Connaught Place, Delhi</p>
+            </div>
           </div>
-          <div className='card-header-location'>
-            <p>📍Connaught Place, Delhi</p>
+          <div className='card-header-usp-mc'>
+            <p className='card-header-usp'>Customisable Drink Options</p>
+            <p className='card-header-mc'>Dessert</p>
           </div>
         </div>
         <div className='card-body'></div>
