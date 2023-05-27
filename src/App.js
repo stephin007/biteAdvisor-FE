@@ -32,9 +32,11 @@ const App = () => {
         <Banner />
         <div className='content-container'>
           <Search />
-          {reviews.map((review) => {
-            return <Card review={review} loading={loading} key={review.id} />;
-          })}
+          <div className='master-card-container'>
+            {reviews.map((review) => {
+              return <Card review={review} loading={loading} key={review.id} />;
+            })}
+          </div>
         </div>
       </div>
     </div>

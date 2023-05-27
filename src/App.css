@@ -35,3 +35,16 @@ body {
   flex-direction: column;
   font-family: 'Tsukimi Rounded', sans-serif;
 }
+
+.master-card-container{
+  overflow-y: auto;
+  height: 80vh;
+  width: 400px;
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.master-card-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
