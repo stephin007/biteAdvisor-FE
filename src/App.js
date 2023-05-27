@@ -20,7 +20,7 @@ const App = () => {
       setLoading(false);
     };
 
-    // getDetails();
+    getDetails();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
@@ -32,7 +32,9 @@ const App = () => {
         <Banner />
         <div className='content-container'>
           <Search />
-          <Card reviews={reviews} loading={loading} />
+          {reviews.map((review) => {
+            return <Card review={review} loading={loading} key={review.id} />;
+          })}
         </div>
       </div>
     </div>
