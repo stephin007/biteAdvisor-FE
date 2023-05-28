@@ -17,8 +17,6 @@ const App = () => {
       setLoading(true);
       const data = await getDocs(restaurantDetailsRef);
       setReviews(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-      console.log(reviews);
-      console.log(loading);
       setLoading(false);
     };
 
@@ -57,9 +55,25 @@ const App = () => {
             </div>
           </div>
           <div className='master-card-container'>
-            {filteredData.map((review) => {
-              return <Card review={review} loading={loading} key={review.id} />;
-            })}
+            {loading ? (
+              <>
+                <div className='loader-container'>
+                  <div className='loader'></div>
+                </div>
+              </>
+            ) : (
+              <>
+                {filteredData.length === 0 ? (
+                  <p className='no-review'>No reviews found 😕</p>
+                ) : (
+                  filteredData.map((review) => {
+                    return (
+                      <Card review={review} loading={loading} key={review.id} />
+                    );
+                  })
+                )}
+              </>
+            )}
           </div>
         </div>
       </div>
