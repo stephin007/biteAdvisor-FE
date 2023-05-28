@@ -45,7 +45,7 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
-.no-review p{
+.no-review{
   color: grey;
   font-size: 25px;
   display: flex;
