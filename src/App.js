@@ -3,11 +3,13 @@ import db from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
 
 import "./App.css";
-import { Header, Banner, Search, Card } from "./components";
+import { Header, Banner, Card } from "./components";
 
 const App = () => {
   const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [searchTerm, setsearchTerm] = useState("");
+
   const restaurantDetailsRef = collection(db, "details");
 
   useEffect(() => {
@@ -23,6 +25,16 @@ const App = () => {
     getDetails();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  let filteredData = reviews;
+  if (searchTerm) {
+    filteredData = filteredData.filter((i) =>
+      i["Name"].toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  } else if (searchTerm === "") {
+    filteredData = reviews;
+  }
+
   return (
     <div className='container'>
       <div className='header-container'>
@@ -31,9 +43,21 @@ const App = () => {
       <div className='main-container'>
         <Banner />
         <div className='content-container'>
-          <Search />
+          <div className='search-container'>
+            <div className='search-content'>
+              <h2 className='search-heading'>
+                Find your best restaurant in <span>Delhi, India</span>
+              </h2>
+              <input
+                className='search-input'
+                type='text'
+                placeholder='Name of restaurant?'
+                onChange={(e) => setsearchTerm(e.target.value)}
+              />
+            </div>
+          </div>
           <div className='master-card-container'>
-            {reviews.map((review) => {
+            {filteredData.map((review) => {
               return <Card review={review} loading={loading} key={review.id} />;
             })}
           </div>

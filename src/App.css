@@ -48,3 +48,45 @@ body {
 .master-card-container::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
 }
+
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+}
+
+.search-content{
+  padding: 10px;
+}
+
+.search-content h2{
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: -3px;
+  color: gray;
+}
+
+.search-content h2 span{
+  color: black;
+  font-weight: 500;
+}
+
+.search-content input{
+  width: 94%;
+  height: 40px;
+  border: 2px dotted grey ;
+  border-radius: 5px;
+  padding: 0 10px !important;
+  margin-right: -10px;
+  font-size: 16px;
+  outline: none;
+  color: black;
+}
