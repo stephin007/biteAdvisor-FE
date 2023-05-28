@@ -42,7 +42,7 @@ body {
   width: 400px;
   overflow-x: hidden;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .master-card-container::-webkit-scrollbar { 
