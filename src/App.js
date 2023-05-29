@@ -75,6 +75,32 @@ const App = () => {
               </>
             )}
           </div>
+          <div className='what-can-you-container'>
+            <div className='what-can-you-heading'>
+              <h2>What can you do on Bite Advisor?</h2>
+            </div>
+            <div className='what-can-you-do-search'>
+              <div className='what-can-you-search-heading'>
+                <i class='bx bx-search-alt what-can-you-logo'></i>
+                <h3>Search</h3>
+              </div>
+              <div className='what-can-you-search-content'>
+                <p>
+                  Users can search for restaurants based on location, cuisine,
+                  budget, and rating.
+                </p>
+              </div>
+            </div>
+            <div className='what-can-you-reviews'>
+              <div className='what-can-you-reviews-heading'>
+                <i class='bx bx-medal what-can-you-logo'></i>
+                <h3>Reviews</h3>
+              </div>
+              <div className='what-can-you-reviews-content'>
+                <p>Users can read reviews and ratings for restaurants</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

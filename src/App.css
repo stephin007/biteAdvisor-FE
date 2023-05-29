@@ -115,3 +115,46 @@ body {
   height: 55px;
   animation: spin 2s linear infinite;
 }
+
+.what-can-you-container{
+  height: auto;
+  flex-direction: column;
+  display: flex;
+}
+
+.what-can-you-do-search, .what-can-you-reviews{
+  flex-direction: column;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+  background: white;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.what-can-you-search-heading, .what-can-you-reviews-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what-can-you-search-heading h3, .what-can-you-reviews-heading h3{
+  margin: 0;
+}
+
+.what-can-you-search-content p, .what-can-you-reviews-content p{
+  color: grey;
+}
+
+.what-can-you-logo{
+  padding: 10px;
+  margin: 10px;
+  background: black;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.what-can-you-search-content, .what-can-you-reviews-content{
+  text-align: center;
+}
