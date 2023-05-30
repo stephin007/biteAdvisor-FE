@@ -1,4 +1,4 @@
-# Contributing to [project name]
+# Contributing to BiteAdvisor
 
 Thank you for considering contributing to this project! We appreciate any and all contributions and would love to work with you to make this project better. To get started, please take a moment to review this guide.
 
