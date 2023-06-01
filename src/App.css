@@ -20,23 +20,22 @@ body {
   flex-direction: column;
 }
 
-.header-container{
+.header-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+    align-items: center;
   background-color: black;
   color: #f6f7f9;
   border-radius: 0 0 10px 10px;
   margin-top: -15px;
-  position: relative;
+  padding: 0px 20px;
   }
   
-  .header-container a {
-    position: absolute;
-    top: 22px;
-    right: 16px;
-    font-size: 26px;
+.header-container a {
+  font-size: 26px;
     text-decoration: none;
-    color: white;
+  color: white;
+  padding-top: 8px;
 }
 
 .main-container{
