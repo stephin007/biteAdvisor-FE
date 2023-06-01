@@ -37,6 +37,13 @@ const App = () => {
     <div className='container'>
       <div className='header-container'>
         <Header />
+        <a 
+          href="https://github.com/stephin007/biteAdvisor-FE" 
+          target="_blank" 
+          rel="noreferrer"
+        >
+          <i className="bx bxl-github"></i>
+        </a>
       </div>
       <div className='main-container'>
         <Banner />
